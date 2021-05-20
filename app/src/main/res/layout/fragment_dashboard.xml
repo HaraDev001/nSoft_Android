@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/fragment_home"
+    android:layout_height="match_parent"
+    app:umanoDragView="@id/lay_drag_shop"
+    app:umanoScrollableView="@id/lst_notice"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="@dimen/bottom_home_height"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/box_margin_left_right"
+                android:layout_marginRight="@dimen/box_margin_left_right"
+                android:background="@drawable/radius_dash_box">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="0dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/radius_yellow_box_big">
+
+                            <TextView
+                                android:id="@+id/txt_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="right"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold"
+                                android:paddingRight="10dp"
+                                android:text="45.00000">
+                            </TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/radius_orange_box_big">
+                            <TextView
+                                android:id="@+id/txt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:layout_gravity="right"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical"
+                                android:text="Daisy">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/txt_open_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:layout_gravity="right"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical"
+                                android:text="7: 00">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/txt_shift"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:layout_gravity="right"
+                                android:textColor="@color/white"
+                                android:gravity="center_vertical"
+                                android:text="FIRST SHIFT">
+
+                            </TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/transaction_padding_right"
+                        android:layout_marginLeft="@dimen/transaction_padding_left"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/radius_green_box_big">
+
+                        <TextView
+                            android:id="@+id/txt_open_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:text=""
+                            android:textColor="@color/white">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/box_margin_left_right"
+                android:layout_marginRight="@dimen/box_margin_left_right"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:background="@drawable/radius_dash_box">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dashboard_top_height"
+                    android:background="@drawable/radius_dash_category"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_washer"
+                            android:layout_width="80dp"
+                            android:layout_marginLeft="@dimen/category_button_space"
+                            android:layout_marginRight="@dimen/category_button_space"
+                            android:layout_height="@dimen/category_button_height"
+                            android:textSize="12dp"
+                            android:text="washer"
+                            android:textColor="@color/white"
+                            android:background="@drawable/radius_border_white">
+                        </Button>
+
+                        <Button
+                            android:id="@+id/btn_dryer"
+                            android:layout_width="80dp"
+                            android:layout_marginLeft="@dimen/category_button_space"
+                            android:layout_marginRight="@dimen/category_button_space"
+                            android:layout_height="@dimen/category_button_height"
+                            android:textSize="12dp"
+                            android:text="dryer"
+                            android:textColor="@color/white"
+                            android:background="@drawable/radius_border_white">
+                        </Button>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txt_machine_count"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="@dimen/category_button_space"
+                            android:layout_marginRight="@dimen/category_button_space"
+                            android:layout_height="@dimen/category_button_height"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:text="3"
+                            android:textColor="@color/white">
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_machine_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/box_margin_left_right"
+                android:layout_marginRight="@dimen/box_margin_left_right"
+                android:orientation="vertical"
+                android:background="@drawable/radius_dash_box">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dashboard_top_height"
+                    android:background="@drawable/radius_dash_category"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="@dimen/category_arrow_size"
+                        android:layout_height="@dimen/category_arrow_size"
+                        android:visibility="gone"
+                        android:src="@drawable/left_arrow">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_inventory_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="@dimen/category_arrow_size"
+                        android:layout_height="@dimen/category_arrow_size"
+                        android:visibility="gone"
+                        android:src="@drawable/right_arrow">
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:background="@color/transparent"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:orientation="vertical">
+<!--                    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--                        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                        android:id="@+id/swipe_container"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+<!--                    <com.yalantis.phoenix.PullToRefreshView-->
+<!--                        android:id="@+id/pull_to_refresh"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+                        <ListView
+                            android:id="@+id/lst_inventory"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/radius_bottom_box"
+                            android:layout_height="match_parent"
+                            android:divider="@color/gray06"
+                            android:visibility="visible"
+                            android:dividerHeight="1dp"
+                            tools:listitem="@layout/item_inventory">
+                        </ListView>
+<!--                    </com.yalantis.phoenix.PullToRefreshView>-->
+
+<!--                        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+                    <include
+                        android:id="@+id/empty_result"
+                        layout="@layout/layout_empty_result"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/transaction_padding_left"
+                android:paddingRight="@dimen/transaction_padding_right"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/box_margin_left_right"
+                android:layout_marginRight="@dimen/box_margin_left_right"
+                android:gravity="center"
+                android:background="@drawable/radius_dash_box">
+
+                <ImageView
+                    android:id="@+id/img_previous"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="@dimen/category_arrow_size"
+                    android:layout_height="@dimen/category_arrow_size"
+                    android:visibility="gone"
+                    android:src="@drawable/left_arrow">
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/lay_previous_user"
+                    android:layout_width="@dimen/category_arrow_size"
+                    android:layout_height="@dimen/category_arrow_size"
+                    android:visibility="gone"
+                    android:background="@drawable/radius_circle_click_main"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_arrow_left"></ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_weight="1">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_user_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_next"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="@dimen/category_arrow_size"
+                    android:layout_height="@dimen/category_arrow_size"
+                    android:visibility="gone"
+                    android:src="@drawable/right_arrow">
+                </ImageView>
+                <LinearLayout
+                    android:id="@+id/lay_next_user"
+                    android:layout_width="@dimen/category_arrow_size"
+                    android:layout_height="@dimen/category_arrow_size"
+                    android:background="@drawable/radius_circle_click_main"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/icon_arrow_right">
+                    </ImageView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_loading">
+        </include>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_bottom_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

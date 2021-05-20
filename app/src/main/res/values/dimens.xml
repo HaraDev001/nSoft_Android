@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">40dp</dimen>
+    <dimen name="report_vertical_margin">30dp</dimen>
+    <dimen name="nav_header_vertical_spacing">4dp</dimen>
+    <dimen name="nav_header_height">220dp</dimen>
+    <dimen name="nav__report_header_height">150dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="top_image_icon_size">30dp</dimen>
+    <dimen name="calendar_image_size">30dp</dimen>
+    <dimen name="calendar_text_width">120dp</dimen>
+    <dimen name="report_date_text_width">150dp</dimen>
+    <dimen name="report_button_width">100dp</dimen>
+    <dimen name="report_button_margin_left">5dp</dimen>
+    <dimen name="report_button_margin_right">5dp</dimen>
+    <dimen name="calendar_text_height">30dp</dimen>
+    <dimen name="bottom_image_icon_size">30dp</dimen>
+    <dimen name="bottom_home_height">50dp</dimen>
+    <dimen name="content_top_height">40dp</dimen>
+    <dimen name="dashboard_top_height">45dp</dimen>
+    <dimen name="inventory_item_width">35dp</dimen>
+    <dimen name="inventory_item_height">20dp</dimen>
+    <dimen name="offer_detail_no_width">40dp</dimen>
+    <dimen name="offer_detail_count_width">80dp</dimen>
+    <dimen name="offer_detail_unit_width">50dp</dimen>
+
+    <dimen name="item_email_width">90dp</dimen>
+    <dimen name="item_email_height">30dp</dimen>
+
+    <dimen name="menu_right_layer_width">70dp</dimen>
+    <dimen name="menu_right_layer_height">30dp</dimen>
+    <dimen name="menu_right_layer_padding">15dp</dimen>
+
+    <dimen name="design_navigation_icon_size" tools:override="true">25dp</dimen>
+
+    <dimen name="login_text_size">14dp</dimen>
+    <dimen name="button_text_size">16dp</dimen>
+    <dimen name="login_link_text_size">14dp</dimen>
+
+    <dimen name="menu_padding_left">20dp</dimen>
+    <dimen name="menu_title_text_size">18dp</dimen>
+    <dimen name="menu_icon_spacing">30dp</dimen>
+    <dimen name="menu_icon_size">20dp</dimen>
+
+    <dimen name="transaction_item_height">40dp</dimen>
+    <dimen name="reading_item_height">35dp</dimen>
+    <dimen name="transaction_padding_left">10dp</dimen>
+    <dimen name="transaction_padding_right">10dp</dimen>
+    <dimen name="shop_padding_left">30dp</dimen>
+    <dimen name="shop_padding_right">30dp</dimen>
+    <dimen name="shop_input_padding_left">20dp</dimen>
+    <dimen name="shop_input_padding_right">20dp</dimen>
+    <dimen name="shop_sub_title_width">100dp</dimen>
+    <dimen name="sub_title_font_size">14dp</dimen>
+    <dimen name="staff_item_font_size">12dp</dimen>
+    <dimen name="shop_edit_font_size">14dp</dimen>
+    <dimen name="sub_title_font_big">18dp</dimen>
+    <dimen name="sub_content_font_size">12dp</dimen>
+
+    <dimen name="category_button_space">5dp</dimen>
+    <dimen name="category_button_height">30dp</dimen>
+    <dimen name="category_arrow_size">30dp</dimen>
+    <dimen name="box_margin_top">20dp</dimen>
+    <dimen name="box_margin_left_right">15dp</dimen>
+    <dimen name="box_margin_bottom">15dp</dimen>
+    <dimen name="round_big_image_size">90dp</dimen>
+
+    <dimen name="graph_content_height">250dp</dimen>
+    <dimen name="sale_item_height">35dp</dimen>
+    <dimen name="staff_profile_item_height">45dp</dimen>
+    <dimen name="category_sale_item_height">40dp</dimen>
+
+    <dimen name="text_view_content">15.0dp</dimen>
+    <dimen name="item_replenish_padding_left_right">15dp</dimen>
+    <dimen name="item_replenish_padding_top_bottom">15dp</dimen>
+    <dimen name="item_replenish_select_button_size">80dp</dimen>
+    <dimen name="item_replenish_date_button_size">200dp</dimen>
+    <dimen name="item_replenish_category_height">35dp</dimen>
+    <dimen name="item_replenish_category_padding_top">5dp</dimen>
+    <dimen name="item_replenish_category_padding_bottom">5dp</dimen>
+
+</resources>

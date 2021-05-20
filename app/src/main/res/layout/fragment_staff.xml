@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/MyTheme"
+    android:orientation="vertical"
+    android:id="@+id/fra_staff"
+    android:layout_height="match_parent"
+    app:umanoDragView="@id/lay_drag_shop"
+    app:umanoScrollableView="@id/lst_my_shop"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="@dimen/bottom_home_height"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"
+                android:paddingBottom="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="40dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edt_staff_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:paddingLeft="40dp"
+                            android:background="@drawable/radius_search"
+                            android:textSize="16sp"
+                            android:textColorHint="@color/monsoon"
+                            android:inputType="textPersonName"
+                            android:hint="Search" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="left|center"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/search_icon"/>
+
+                        <ImageView
+                            android:id="@+id/img_search"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="right|center"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/search_arrow_icon"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lst_stuff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/gray06"
+                    android:dividerHeight="1dp"
+                    tools:listitem="@layout/item_staff">
+                </ListView>
+
+                <include
+                    android:id="@+id/empty_result"
+                    layout="@layout/layout_empty_result"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_loading">
+        </include>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_bottom_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout >

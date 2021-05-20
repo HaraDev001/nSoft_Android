@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:theme="@style/MyTheme"
+    android:id="@+id/fra_transaction"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    app:umanoDragView="@id/lay_drag_shop"
+    app:umanoScrollableView="@id/lst_my_shop"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="@dimen/bottom_home_height"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/text_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/clr_button_6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/transaction_padding_left">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="DATE SHIFT"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_shift_date1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+63 0123456789"
+                                android:textColor="@color/monsoon"
+                                android:textSize="@dimen/sub_content_font_size"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/transaction_padding_right"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/txt_shift1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:text="FIRST SHIFT"
+                                android:textColor="@color/monsoon"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/transaction_padding_left">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="OPEN STAFF"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_open_date1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+63 0123456789"
+                                android:textColor="@color/monsoon"
+                                android:textSize="@dimen/sub_content_font_size"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/transaction_padding_right"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/open_name1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:text="\u0040DAISY"
+                                android:textColor="@color/monsoon"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/transaction_padding_left">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CLOSE STAFF"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size"></TextView>
+
+                            <TextView
+                                android:id="@+id/txt_close_date1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+63 0123456789"
+                                android:textColor="@color/monsoon"
+                                android:textSize="@dimen/sub_content_font_size"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/transaction_padding_right"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/close_name1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:text="\u0040DAISY"
+                                android:textColor="@color/monsoon"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/transaction_padding_left">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="GROSS SALES"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/transaction_padding_right"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/txt_gross_sale1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:text="8545.00"
+                                android:textColor="@color/monsoon"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/transaction_padding_left">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CASH RECEIVED"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/transaction_padding_right"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/txt_cash_received1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:text="8546.00"
+                                android:textColor="@color/monsoon"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/transaction_padding_left">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="CASH COUNT"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/transaction_padding_right"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/txt_cash_count1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:text="200"
+                                android:textColor="@color/monsoon"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/transaction_padding_left">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BANK DEPOSIT"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/transaction_padding_right"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/txt_bank_deposit1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical"
+                                android:text="8546.00"
+                                android:textColor="@color/monsoon"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/transaction_padding_left">
+
+                    <TextView
+                        android:id="@+id/txt_shift"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/radius_border_blue_oval_box"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="20dp"
+                        android:textColor="@color/white">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_shift_date"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:textSize="18dp"
+                        android:text="January"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="20dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:background="@drawable/radius_green_box_big">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                app:civ_border_width="0dp"
+                                app:civ_border_color="@color/text_top_blue_button"
+                                android:src="@drawable/staff_user" >
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/open_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:layout_gravity="right"
+                                    android:textColor="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:text="Daisy">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/txt_open_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:layout_gravity="right"
+                                    android:textColor="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:text="7: 00">
+
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:background="@drawable/radius_orange_box_big">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_margin="10dp"
+                                app:civ_border_width="0dp"
+                                app:civ_border_color="@color/text_top_blue_button"
+                                android:src="@drawable/staff_user" >
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/close_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:layout_gravity="right"
+                                    android:textColor="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:text="Daisy">
+
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/txt_close_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:textSize="14dp"
+                                    android:layout_gravity="right"
+                                    android:textColor="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:text="7: 00">
+
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle_box_white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Gross"
+                                android:gravity="center_vertical|left"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/txt_gross_sale"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical|right"
+                                android:text="8545.00"
+                                android:textColor="@color/white"></TextView>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Drawer"
+                                android:gravity="center_vertical|left"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/txt_cash_received"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical|right"
+                                android:text="8545.00"
+                                android:textColor="@color/white"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/white" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Cash Count"
+                                android:gravity="center_vertical|left"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/txt_cash_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical|right"
+                                android:text="8545.00"
+                                android:textColor="@color/white"></TextView>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:orientation="vertical"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="Bank Deposit"
+                                android:gravity="center_vertical|left"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/txt_bank_deposit"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="right"
+                                android:gravity="center_vertical|right"
+                                android:text="8545.00"
+                                android:textColor="@color/white"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.yalantis.phoenix.PullToRefreshView
+                    android:id="@+id/pull_to_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ListView
+                        android:id="@+id/lst_transaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@color/gray06"
+                        android:dividerHeight="1dp"
+                        tools:listitem="@layout/item_transaction">
+                    </ListView>
+
+                </com.yalantis.phoenix.PullToRefreshView>
+
+                <include
+                    android:id="@+id/empty_result"
+                    layout="@layout/layout_empty_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_loading"></include>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_bottom_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

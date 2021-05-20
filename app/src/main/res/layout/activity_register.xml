@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_register"
+    android:theme="@style/MyTheme"
+    android:orientation="vertical"
+    tools:context="com.nsoft.laundromat.controller.login.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lay_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="580dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/alpha_background">
+
+                <ImageView
+                    android:layout_width="195dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Please input your personal information"
+                    android:textColor="@color/jet">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp">
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lay_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/lay_first_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/txt_layout_first"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    app:hintAnimationEnabled="true"
+                                    app:errorEnabled="true"
+                                    app:errorTextAppearance="@color/jumbo">
+
+                                    <EditText
+                                        android:id="@+id/txt_first_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="First name"
+                                        android:inputType="textPersonName"
+                                        android:paddingTop="5dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/jet"
+                                        android:textColorHint="@color/jet"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="14dp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lay_lsat_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/txt_layout_last_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    app:hintAnimationEnabled="true"
+                                    app:errorEnabled="true"
+                                    app:errorTextAppearance="@color/jumbo">
+
+                                    <EditText
+                                        android:id="@+id/txt_last"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Last name"
+                                        android:inputType="textPersonName"
+                                        android:paddingTop="5dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/jet"
+                                        android:textColorHint="@color/jet"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="14dp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lay_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    app:hintAnimationEnabled="true"
+                                    app:errorEnabled="true"
+                                    app:errorTextAppearance="@color/jumbo">
+
+                                    <EditText
+                                        android:id="@+id/txt_email"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:hint="Email"
+                                        android:inputType="textEmailAddress"
+                                        android:paddingTop="5dp"
+                                        android:singleLine="true"
+                                        android:textColor="@color/jet"
+                                        android:textColorHint="@color/jet"
+                                        android:textCursorDrawable="@null"
+                                        android:textSize="14dp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:paddingTop="0dp"
+                                    app:passwordToggleEnabled="true"
+                                    app:hintAnimationEnabled="true"
+                                    app:errorEnabled="false"
+                                    app:passwordToggleTint="@color/jet">
+
+                                    <EditText
+                                        android:id="@+id/txt_password"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:paddingTop="5dp"
+                                        android:inputType="textPassword"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/jet"
+                                        android:hint="Password"
+                                        android:singleLine="true"
+                                        android:textCursorDrawable="@null"
+                                        android:textColorHint="@color/jet"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:focusable="true"
+                                android:layout_marginTop="10dp"
+                                android:focusableInTouchMode="true"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    app:passwordToggleEnabled="true"
+                                    app:hintAnimationEnabled="true"
+                                    app:errorEnabled="false"
+                                    app:passwordToggleTint="@color/jet">
+
+                                    <EditText
+                                        android:id="@+id/txt_confirm_password"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="top|left"
+                                        android:paddingTop="5dp"
+                                        android:inputType="textPassword"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/jet"
+                                        android:hint="Confirm password"
+                                        android:singleLine="true"
+                                        android:textCursorDrawable="@null"
+                                        android:textColorHint="@color/jet" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/lay_binding_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:visibility="gone"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txt_layout_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="0dp"
+                                app:hintAnimationEnabled="true"
+                                app:errorEnabled="true"
+                                app:errorTextAppearance="@color/jumbo">
+
+                                <EditText
+                                    android:id="@+id/edt_binding_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="top|left"
+                                    android:hint="Email"
+                                    android:inputType="textEmailAddress"
+                                    android:paddingTop="5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/jet"
+                                    android:textColorHint="@color/jet"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="14dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_verification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:visibility="gone"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txt_layout_verification"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="0dp"
+                                app:hintAnimationEnabled="true"
+                                app:errorEnabled="true"
+                                app:errorTextAppearance="@color/jumbo">
+
+                                <EditText
+                                    android:id="@+id/edt_verification"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="top|left"
+                                    android:hint="Verification code"
+                                    android:inputType="number"
+                                    android:paddingTop="5dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/jet"
+                                    android:textColorHint="@color/jet"
+                                    android:textCursorDrawable="@null"
+                                    android:textSize="14dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_register"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/button_text_size"
+                            android:background="@drawable/radius_replenish_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Register" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal">
+
+                            <com.google.android.gms.common.SignInButton
+                                android:id="@+id/btn_google_register"
+                                android:layout_width="100dp"
+                                android:visibility="gone"
+                                android:layout_height="30dp"/>
+
+                            <ImageView
+                                android:id="@+id/img_google"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/google_icon">
+                            </ImageView>
+                            <ImageView
+                                android:id="@+id/img_facebook"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/facebook_icon">
+                            </ImageView>
+
+                            <com.facebook.login.widget.LoginButton
+                                android:id="@+id/btn_face_register"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="25dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top|left"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_back_blue">
+            </ImageView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/MyTheme"
+    style="@style/MatchWrap"
+    android:background="@drawable/item_pressed"
+    android:layout_height="@dimen/sale_item_height"
+    android:orientation="horizontal"
+    android:layout_gravity="left|center"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="9 am"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sub_title_font_size"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/gray06" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:textColor="@color/monsoon"
+            android:gravity="center_vertical"
+            android:text="21,000.00"
+            android:paddingRight="10dp">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

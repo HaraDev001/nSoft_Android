@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape>
+            <corners
+                android:radius="20dp">
+            </corners>
+            <solid android:color="#ABDCF3"  />
+        </shape>
+    </item>
+
+    <item android:state_enabled="false">
+        <shape>
+            <corners
+                android:radius="20dp">
+            </corners>
+            <solid android:color="@color/clr_button_3" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+
+            <gradient
+                android:angle="180"
+                android:endColor="@color/clr_login_start"
+                android:startColor="@color/clr_login_end"
+                android:type="linear" />
+            <corners
+                android:radius="20dp">
+            </corners>
+        </shape>
+    </item>
+</selector>

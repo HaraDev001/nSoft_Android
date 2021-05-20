@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:theme="@style/MyTheme"
+    android:id="@+id/activity_user_info"
+    tools:context=".controller.user.UserInfoActivity"
+    app:umanoDragView="@id/lay_drag_shop"
+    app:umanoScrollableView="@id/lst_notice"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="@dimen/bottom_home_height"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/box_margin_top"
+            android:layout_marginLeft="@dimen/box_margin_left_right"
+            android:layout_marginRight="@dimen/box_margin_left_right"
+            android:layout_marginBottom="@dimen/box_margin_bottom"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/radius_box">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/transaction_padding_left">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sub_title_font_size"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/transaction_padding_right"
+                        android:gravity="right">
+                        <TextView
+                            android:id="@+id/txt_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:textColor="@color/monsoon"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="Martin Solidam">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/transaction_padding_left">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sub_title_font_size">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/transaction_padding_right"
+                        android:gravity="right">
+                        <TextView
+                            android:id="@+id/txt_mail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:background="@null"
+                            android:textColor="@color/monsoon"
+                            android:gravity="center_vertical"
+                            android:text="tomas@gmail.com">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/transaction_padding_left">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Expired Date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sub_title_font_size">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/transaction_padding_right"
+                        android:gravity="right">
+                        <TextView
+                            android:id="@+id/txt_expiry_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:background="@null"
+                            android:textColor="@color/monsoon"
+                            android:gravity="center_vertical"
+                            android:text="">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/transaction_padding_left">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Role"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sub_title_font_size">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/transaction_padding_right"
+                        android:gravity="right">
+                        <TextView
+                            android:id="@+id/txt_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:background="@null"
+                            android:textColor="@color/monsoon"
+                            android:gravity="center_vertical"
+                            android:text="Owner">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/lay_change_password"
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radius_replenish_button"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Change Password"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="16dp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_bottom_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

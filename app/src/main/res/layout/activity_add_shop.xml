@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:theme="@style/MyTheme"
+    android:id="@+id/activity_add_shop"
+    tools:context="com.nsoft.laundromat.controller.shop.AddShopActivity"
+    app:umanoDragView="@id/lay_drag_shop"
+    app:umanoScrollableView="@id/lst_notice"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="@dimen/bottom_home_height"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/box_margin_top"
+            android:layout_marginLeft="@dimen/box_margin_left_right"
+            android:layout_marginRight="@dimen/box_margin_left_right"
+            android:layout_marginBottom="@dimen/box_margin_bottom"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/radius_box">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_top_height"
+                android:background="@drawable/radius_category"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+                android:gravity="center_vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_capture"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/qr_code"
+                    android:layout_marginBottom="40dp">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:paddingLeft="@dimen/shop_input_padding_left"
+                        android:paddingRight="@dimen/shop_input_padding_right"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="@dimen/shop_sub_title_width"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Machine ID:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="left">
+                            <EditText
+                                android:id="@+id/edt_machine_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:background="@null"
+                                android:textSize="@dimen/shop_edit_font_size"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="">
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:paddingLeft="@dimen/shop_input_padding_left"
+                        android:paddingRight="@dimen/shop_input_padding_right"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="@dimen/shop_sub_title_width"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Shop Name:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="left">
+                            <EditText
+                                android:id="@+id/edt_shop_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:background="@null"
+                                android:textSize="@dimen/shop_edit_font_size"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="">
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/transaction_item_height"
+                        android:paddingLeft="@dimen/shop_input_padding_left"
+                        android:paddingRight="@dimen/shop_input_padding_right"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="@dimen/shop_sub_title_width"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Branch:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="left">
+                            <EditText
+                                android:id="@+id/edt_branch"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:background="@null"
+                                android:textSize="@dimen/shop_edit_font_size"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="">
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_add_shop"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_text_size"
+                    android:background="@drawable/radius_replenish_button"
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="Add Shop" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_bottom_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

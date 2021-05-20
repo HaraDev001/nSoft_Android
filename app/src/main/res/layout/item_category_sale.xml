@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/MyTheme"
+    style="@style/MatchWrap"
+    android:background="@color/white"
+    android:layout_height="@dimen/category_sale_item_height"
+    android:orientation="horizontal"
+    android:layout_gravity="left|center"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Premium Wash"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size">
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/gray06" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txt_sale_count"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/monsoon"
+            android:gravity="center"
+            android:text="20">
+
+        </TextView>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/gray06" />
+
+        <TextView
+            android:id="@+id/txt_sale_amount"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textColor="@color/monsoon"
+            android:gravity="center"
+            android:text="21,000.00">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

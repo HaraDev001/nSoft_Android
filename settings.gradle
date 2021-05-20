@@ -1,0 +1,3 @@
+include ':app', ':MPChartLib'
+//include ':app'
+rootProject.name='nSoft'

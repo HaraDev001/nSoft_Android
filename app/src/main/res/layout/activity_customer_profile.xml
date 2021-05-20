@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_customer_profile"
+    tools:context="com.nsoft.laundromat.controller.customer.CustomerProfileActivity"
+    app:umanoDragView="@id/lay_drag_shop"
+    app:umanoScrollableView="@id/lst_notice"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="@dimen/bottom_home_height"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/lay_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/lay_previous_customer"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/radius_circle_click_main"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/icon_arrow_left">
+                            </ImageView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="90dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_profile"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="@dimen/round_big_image_size"
+                            android:layout_height="@dimen/round_big_image_size"
+                            app:civ_border_color="@color/light_gray"
+                            app:civ_border_width="1dp"
+                            android:src="@drawable/staff_user"/>
+                        <ImageView
+                            android:id="@+id/img_premium_regular"
+                            android:layout_width="25dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right|bottom"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/premium_icon">
+                        </ImageView>
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:id="@+id/lay_next_customer"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/radius_circle_click_main"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/icon_arrow_right">
+                            </ImageView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/menu_title_text_size"
+                    android:text="Martin Solidum"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NAME"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/txt_customer_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="left"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="Martin Solidum"
+                            android:textSize="14dp">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ADDRESS"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="left"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="Sta, Ana, Manila"
+                            android:textSize="14dp">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MOBILE"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12dp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical">
+
+                        <TextView
+                            android:id="@+id/txt_mobile"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:textColor="@color/black"
+                            android:visibility="visible"
+                            android:gravity="center_vertical"
+                            android:text="09088198888"
+                            android:textSize="14dp"
+                            android:paddingLeft="10dp">
+                        </TextView>
+                        <ImageView
+                            android:id="@+id/img_phone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:visibility="visible"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/phone_icon">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/img_message"
+                            android:layout_width="30dp"
+                            android:visibility="visible"
+                            android:layout_height="30dp"
+                            android:src="@drawable/message_icon">
+                        </ImageView>
+                    </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:gravity="right|center_vertical">-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/txt_mobile"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="right"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:visibility="visible"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="09088198888">-->
+<!--                        </TextView>-->
+<!--                        <ImageView-->
+<!--                            android:id="@+id/img_phone"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:visibility="visible"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:src="@drawable/phone_icon">-->
+<!--                        </ImageView>-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/img_message"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:visibility="visible"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:src="@drawable/message_icon">-->
+<!--                        </ImageView>-->
+<!--                    </LinearLayout>-->
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EMAIL"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="marting@gmail.com"
+                            android:paddingLeft="10dp">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="BALANCE"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/txt_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="0.00"
+                            android:paddingLeft="10dp"
+                            android:textSize="14dp">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:paddingLeft="@dimen/transaction_padding_left"
+                    android:background="@color/profile_transaction_tab_color">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TRANSACTION"
+                        android:textSize="@dimen/menu_title_text_size"
+                        android:textColor="@color/black"
+                        android:gravity="center_vertical">
+                    </TextView>
+                </LinearLayout>
+
+                <com.yalantis.phoenix.PullToRefreshView
+                    android:id="@+id/pull_to_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <ListView
+                        android:id="@+id/lst_customer_transaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:divider="@color/gray06">
+                    </ListView>
+                </com.yalantis.phoenix.PullToRefreshView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_loading">
+        </include>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_bottom_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

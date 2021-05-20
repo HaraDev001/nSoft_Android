@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_home"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/box_margin_left_right"
+            android:layout_marginRight="@dimen/box_margin_left_right"
+            android:background="@drawable/radius_box_half"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_height="@dimen/content_top_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/content_top_color"
+                android:textSize="@dimen/sub_title_font_big"
+                android:text="MONTH YEAR">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="january 2018"
+                android:textColor="@color/content_top_color"
+                android:gravity="center_vertical">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/radius_blue_box"
+                android:layout_marginLeft="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/calendar_icon">
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/graph_content_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/box_margin_left_right"
+            android:layout_marginRight="@dimen/box_margin_left_right"
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/radius_box">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_top_height"
+                android:background="@drawable/radius_category"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/img_previous"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="@dimen/category_arrow_size"
+                    android:layout_height="@dimen/category_arrow_size"
+                    android:src="@drawable/left_arrow">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_day"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/category_button_space"
+                        android:layout_marginRight="@dimen/category_button_space"
+                        android:layout_height="@dimen/category_button_height"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:text="DAILY"
+                        android:textColor="@color/white"
+                        android:background="@drawable/radius_category_button">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btn_week"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/category_button_space"
+                        android:layout_marginRight="@dimen/category_button_space"
+                        android:layout_height="@dimen/category_button_height"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:text="WEEKLY"
+                        android:textColor="@color/white"
+                        android:background="@drawable/radius_category_button">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btn_month"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="@dimen/category_button_space"
+                        android:layout_marginRight="@dimen/category_button_space"
+                        android:layout_height="@dimen/category_button_height"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:text="MONTHLY"
+                        android:textColor="@color/white"
+                        android:background="@drawable/radius_category_button">
+                    </Button>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_next"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="@dimen/category_arrow_size"
+                    android:layout_height="@dimen/category_arrow_size"
+                    android:src="@drawable/right_arrow">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_graph"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

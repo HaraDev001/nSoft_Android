@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/MyTheme"
+    style="@style/MatchWrap"
+    android:background="@drawable/item_pressed"
+    android:paddingRight="@dimen/transaction_padding_left"
+    android:paddingLeft="@dimen/transaction_padding_right"
+    android:layout_height="55dp"
+    android:id="@+id/lay_transaction"
+    android:orientation="horizontal"
+    android:layout_gravity="left|center"
+    android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ok_copy_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/txt_operation_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JO123456789"
+                android:textColor="@color/black"
+                android:textSize="16dp">
+            </TextView>
+            <TextView
+                android:id="@+id/txt_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="January 12 2019 Wed 5:00 PM"
+                android:textColor="@color/monsoon"
+                android:textSize="12dp">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="7832.10"
+            android:gravity="right">
+        </TextView>
+
+</LinearLayout>

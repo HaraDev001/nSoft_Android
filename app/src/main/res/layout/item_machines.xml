@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/lay_machine"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/icon_machine_use"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_machine_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="8dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:background="@drawable/radius_border_gray_box">
+        <TextView
+            android:id="@+id/txt_machine_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.26 min"
+            android:textSize="8dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

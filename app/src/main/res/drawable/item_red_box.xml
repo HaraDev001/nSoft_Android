@@ -1,0 +1,21 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" >
+        <shape>
+            <corners
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp">
+            </corners>
+            <solid android:color="@color/clr_button_5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp">
+            </corners>
+            <solid android:color="@color/profile_transaction_item_selected_color" />
+        </shape>
+    </item>
+</selector>
+

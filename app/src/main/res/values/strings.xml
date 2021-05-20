@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Laundry</string>
+
+    <!--    sdk facebook-->
+
+<!--    <string name="facebook_app_id">1494444124065933</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb1494444124065933</string>-->
+
+    <string name="facebook_app_id">611491859413243</string>
+    <string name="fb_login_protocol_scheme">fb611491859413243</string>
+
+    <!--    sdk google sign in-->
+    <string name="server_client_id">225201044136-f43nao6tsd1brlm59i6pl7c4gp0i7v4l.apps.googleusercontent.com</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">LAUNDROMAT SYSTEM</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- server url -->
+    <!--    <string name="str_cloud_http_server">http://120.27.126.187:48501</string>-->
+    <string name="str_cloud_http_server">http://35.247.134.80</string>
+    <string name="str_my_http_server">http://192.168.1.14:22000</string>
+    <string name="str_local_http_server">http://192.168.1.100:10000</string>
+    <!--    <string name="str_local_http_server">http://192.168.1.18:22000</string>-->
+    <!-- apis -->
+    <string name="str_url_login">/communication/tryUserLogin</string>
+    <string name="str_url_change_password">/communication/changePassword</string>
+    <string name="str_url_register">/communication/tryRegister</string>
+    <string name="str_url_get_dashboard_data">/communication/getDashboardData</string>
+    <string name="str_url_get_offer_data">/communication/getOfferData</string>
+    <string name="str_url_get_offer_category">/communication/getOfferCategory</string>
+    <string name="str_url_get_shop_list">/communication/getShopList</string>
+    <string name="str_url_update_shop_log">/communication/updateShopLog</string>
+    <string name="str_url_update_last_shop">/communication/updateLastShop</string>
+    <string name="str_url_get_customer_data">/communication/getCustomerData</string>
+    <string name="str_url_get_customer_profile_data">/communication/getCustomerProfileData</string>
+    <string name="str_url_get_staff_data">/communication/getStaffData</string>
+    <string name="str_url_get_staff_profile_data">/communication/getStaffProfileData</string>
+    <string name="str_url_social_register">/communication/trySocialRegister</string>
+    <string name="str_url_add_shop">/communication/addNewShop</string>
+    <string name="str_url_get_item_options">/communication/getItemOptions</string>
+    <string name="str_url_get_offer_detail">/communication/getOfferDetailData</string>
+    <string name="str_url_add_item_replenish">/communication/addNewItemReplenish</string>
+    <string name="str_url_get_item_replenish">/communication/getTempReplenishList</string>
+    <string name="str_url_delete_item_replenish">/communication/deleteTempReplenishItem</string>
+    <string name="str_url_get_report_data">/communication/getReportData</string>
+    <string name="str_url_get_consolidate_data">/communication/getConsolidateResult</string>
+    <string name="str_url_get_notice_data">/communication/getNoticeData</string>
+    <string name="str_url_send_forgot_password_email">/communication/sendEmailForForgotPassword</string>
+    <string name="str_url_send_sdk_binding_email">/communication/sendEmailForSDKBinding</string>
+    <string name="str_url_send_verification_code">/communication/sendVerificationCode</string>
+    <string name="str_url_send_verification_code_binding">/communication/sendVerificationCodeForBinding</string>
+
+    <!-- request data to server apis-->
+    <string name="str_url_request_uuid">/communication/requestUUID</string>
+    <string name="str_url_request_email_uuid">/communication/requestEmailUUID</string>
+    <string name="str_url_request_uuids">/communication/requestUUIDS</string>
+    <string name="str_url_save_replenish_item">/communication/itemReplenishSave</string>
+
+    <!-- main menu label-->
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_dashboard_lowercase">Dashboard</string>
+    <string name="menu_shop">My Shops</string>
+    <string name="menu_transaction">Transaction</string>
+    <string name="menu_customer">Customers</string>
+    <string name="menu_staff">Staff</string>
+    <string name="menu_product_service">Products &amp; Service</string>
+    <string name="menu_offer">Offers</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_report">Reports</string>
+    <string name="menu_user_info">User Information</string>
+    <string name="menu_logout">Logout</string>
+
+    <!-- report menu label-->
+    <string name="menu_report_sale">Sales Report</string>
+    <string name="menu_report_item_sold">Item Sold</string>
+    <string name="menu_report_consolidate">Shop Comparison</string>
+    <string name="menu_report_more">More Reports</string>
+    <string name="menu_report_category">Category Sales Report</string>
+    <string name="menu_report_monthly">Monthly Reports</string>
+    <string name="menu_report_yearly">Yearly Reports</string>
+    <string name="menu_report_dashboard">Go To Main Menu</string>
+    <string name="menu_report_consolidated">Consolidated Reports</string>
+    <string name="menu_report_customers">List of Customers</string>
+    <string name="menu_report_offers">List of Offers</string>
+    <string name="title_customer_profile">Customers Profile</string>
+    <string name="title_staff_profile"> Staff Profile</string>
+    <string name="title_add_shop">Add new shop</string>
+    <string name="title_user_information">User information</string>
+    <string name="title_notice_detail">Notice detail</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_offer_detail">Offer Details</string>
+    <string name="title_capture">Capture</string>
+    <string name="title_item_replenish">Item Replenishment</string>
+
+    <!-- dialog content-->
+    <string name="loading_press">loading...</string>
+    <string name="message_content_register_success">Register success</string>
+    <string name="message_content_register_email_not_binding">Register success</string>
+    <string name="message_content_empty_field">Please input Username and Password</string>
+    <string name="message_content_input_email">Please input your email</string>
+    <string name="message_content_input_code">Please input code</string>
+    <string name="message_content_set_password">Please reset new password</string>
+    <string name="send_email">Send email</string>
+    <string name="send_code">Send code</string>
+    <string name="set_password">Set password</string>
+    <string name="message_content_loading">Loading</string>
+    <string name="content_select_item_name">Please select item name</string>
+    <string name="content_input_quantity">Please input quantity</string>
+    <string name="content_input_date">Please select expired date</string>
+    <string name="content_input_date_overlay">can not select past</string>
+    <string name="content_input_date_incorrect">can not select future</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="service_connection_failed">Cannot connect Windows Service!</string>
+    <string name="service_connection_failed_shop">Cannot connect to</string>
+
+    <string name="str_scan_failed">Scan failed</string>
+    <string name="str_scan_incorrect">This is invalid code</string>
+
+    <string name="str_time">Time</string>
+    <string name="str_date">Date</string>
+    <string name="str_week">Week</string>
+    <string name="str_month">Month</string>
+    <string name="str_year">Year</string>
+
+    <string name="str_manager">Manager</string>
+    <string name="str_owner">Owner</string>
+    <string name="str_supervisor">Supervisor</string>
+    <string name="str_staff">Staff</string>
+
+<!--    <string name="str_email">"@" Email</string>-->
+    <string name="str_email">SEND</string>
+
+    <string name="str_more_pay_in">Pay-Ins &amp; Pay-Out</string>
+    <string name="str_more_offer">Offers &amp; Item List</string>
+
+
+</resources>

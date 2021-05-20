@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:textAppearance="@style/RobotoTextViewStyle">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/icon_dashboard"
+            android:fontFamily="@font/lato_light"
+            android:textAppearance="@style/RobotoTextViewStyle"
+            android:title="@string/menu_dashboard_lowercase" />
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/icon_menu_shop"
+            android:fontFamily="@font/lato_light"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:textAppearance="@style/RobotoTextViewStyle"
+            android:title="@string/menu_shop" />
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/icon_cashdrawer"
+            android:fontFamily="@font/lato_light"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:title="@string/menu_transaction" />
+        <item
+            android:id="@+id/nav_customer"
+            android:icon="@drawable/icon_customer"
+            android:fontFamily="@font/lato_light"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:title="@string/menu_customer" />
+        <item
+            android:id="@+id/nav_stuff"
+            android:icon="@drawable/icon_staff"
+            android:fontFamily="@font/lato_light"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:title="@string/menu_staff" />
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/icon_itemlist"
+            android:fontFamily="@font/lato_light"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:title="@string/menu_offer" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/icon_menu_setting"
+            android:fontFamily="@font/lato_light"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:enabled="false"
+            android:title="@string/menu_setting" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/icon_reports"
+            android:fontFamily="@font/lato_light"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:title="@string/menu_report" />
+<!--        <item-->
+<!--            android:id="@+id/nav_user_info"-->
+<!--            android:icon="@drawable/icon_menu_user"-->
+<!--            android:fontFamily="@font/lato_light"-->
+<!--            android:title="@string/menu_user_info" />-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icon_menu_logout"
+            android:fontFamily="@font/lato_light"
+            app:itemTextAppearance="@style/RobotoTextViewStyle"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/MyTheme"
+    style="@style/MatchWrap"
+    android:background="@drawable/item_pressed"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:layout_gravity="left|center"
+    android:id="@+id/lay_item_notice"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/img_notice_type"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icon_notice_bell" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/txt_notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Sales"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+        <TextView
+            android:id="@+id/txt_notice_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="System bugs and issues"
+            android:textColor="@color/monsoon"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_first"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textAllCaps="false"
+        android:text="Yes"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:background="@drawable/notice_blue_box"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+    </TextView>
+    <TextView
+        android:id="@+id/btn_second"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textAllCaps="false"
+        android:text="No"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:background="@drawable/notice_green_box"
+        android:gravity="center">
+    </TextView>
+
+</LinearLayout>

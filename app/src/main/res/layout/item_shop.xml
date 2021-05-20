@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/MyTheme"
+    style="@style/MatchWrap"
+    android:background="@drawable/item_pressed"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:layout_gravity="left|center"
+    android:id="@+id/lay_item_shop"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/img_shop_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home_clor_icon" />
+        <View
+            android:id="@+id/view_online_status"
+            android:layout_width="9dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="3dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/radius_circle_green">
+        </View>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/txt_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Squeaky Clean"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp">
+        </TextView>
+        <TextView
+            android:id="@+id/txt_branch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mukati"
+            android:textColor="@color/monsoon"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="0.00"></TextView>
+
+    <ImageView
+        android:id="@+id/img_selected"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:visibility="gone"
+        android:src="@drawable/white_tick">
+    </ImageView>
+
+</LinearLayout>

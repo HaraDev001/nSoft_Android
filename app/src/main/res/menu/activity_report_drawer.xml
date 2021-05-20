@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sales_report"
+            android:icon="@drawable/icon_submenu_sales_report"
+            android:fontFamily="@font/lato_light"
+            android:title="@string/menu_report_sale" />
+        <item
+            android:id="@+id/nav_item_sold"
+            android:icon="@drawable/icon_itemsold"
+            android:fontFamily="@font/lato_light"
+            android:title="@string/menu_report_item_sold" />
+        <item
+            android:id="@+id/nav_consolidated"
+            android:icon="@drawable/icon_submenu_consolidate"
+            android:fontFamily="@font/lato_light"
+            android:title="Shop Comparison" />
+        <item
+            android:id="@+id/nav_more"
+            android:icon="@drawable/icon_morereports"
+            android:fontFamily="@font/lato_light"
+            android:title="@string/menu_report_more" />
+        <item
+            android:id="@+id/nav_week"
+            android:icon="@drawable/icon_report_back_blue"
+            android:fontFamily="@font/lato_light"
+            android:title="Go To Main Menu" />
+<!--        <item-->
+<!--            android:id="@+id/nav_month"-->
+<!--            android:icon="@drawable/monthly_icon"-->
+<!--            android:title="@string/menu_report_monthly" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_year"-->
+<!--            android:icon="@drawable/yearly_icon"-->
+<!--            android:title="@string/menu_report_yearly" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_consolidate"-->
+<!--            android:icon="@drawable/consolidate_icon"-->
+<!--            android:title="@string/menu_report_consolidated" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_report_customer"-->
+<!--            android:icon="@drawable/list_customer_icon"-->
+<!--            android:title="@string/menu_report_customers" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_report_offer"-->
+<!--            android:icon="@drawable/list_product_icon"-->
+<!--            android:title="@string/menu_report_offers" />-->
+    </group>
+</menu>

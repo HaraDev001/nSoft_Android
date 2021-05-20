@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nsoft.laundromat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustPan"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".controller.user.UserInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".controller.login.EmailBindingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".controller.notice.NoticeDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".controller.user.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".controller.offer.OfferDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.shop.scan.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.report.ReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.item.ItemReplenishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.shop.AddShopActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".controller.staff.StaffProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.login.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.customer.CustomerProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.menu.MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+    </application>
+
+</manifest>

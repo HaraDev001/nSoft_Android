@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="35dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user_photo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/light_gray"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/staff_user"/>
+
+        <View
+            android:id="@+id/staff_status"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/radius_circle_gray">
+        </View>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daisy"
+        android:textSize="10dp"/>
+    <TextView
+        android:id="@+id/txt_user_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7:10 AM"
+        android:textSize="10sp"/>
+</LinearLayout>

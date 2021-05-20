@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8bc8db</color>
+    <color name="colorPrimaryDark">#6fa0af</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="main_background_color">#8bc8db</color>
+    <color name="profile_transaction_tab_color">#eaeaea</color>
+    <color name="profile_profile_tab_color">#FAF8F8</color>
+    <color name="profile_transaction_item_selected_color">#fa8181</color>
+
+    <color name="status_bar_color">#A9A9A9</color>
+<!--    <color name="menu_selected_color">#2c4f87</color>-->
+    <color name="menu_selected_color">#3B2F2C</color>
+    <color name="menu_icon_color">#3B2F2C</color>
+<!--    <color name="menu_icon_color">#37daf4</color>-->
+    <color name="content_top_color">#37daf4</color>
+    <color name="content_top_button_color">#57daef</color>
+    <color name="grey_button_color">#f1f1f4</color>
+    <color name="circle_border_color">#2c4f87</color>
+
+    <color name="blue">#0000ff</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="dark_monsoon">#555555</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#f2f2f2</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white_iron">#EEEEEE</color>
+    <color name="white_gray">#FEFEFE</color>
+    <color name="item_selected">#69C3E7</color>
+    <color name="player_solid">#9da1a6</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white_alpha">#66ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <!-- gradient color: button -->
+    <color name="clr_button_1">#1da1f2</color>
+    <color name="clr_button_2">#1da1f2</color>
+    <color name="clr_button_3">#ABDCF3</color>
+    <color name="clr_button_4">#ff6f00</color>
+    <color name="clr_button_5">#FE5722</color>
+    <color name="clr_button_6">#01b0f1</color>
+
+    <color name="clr_button_new">#1da1f2</color>
+    <color name="clr_button_new_1">#1da1f2</color>
+    <color name="clr_button_new_2">#ABDCF3</color>
+
+    <color name="clr_login_start">#5592e3</color>
+    <color name="clr_login_end">#3dc5dd</color>
+    <color name="clr_login_link">#27245f</color>
+
+    <!-- 灰色 -->
+    <color name="gray01">#DEE7F0</color>
+    <color name="gray02">#A3A1A1</color>
+    <color name="gray03">#9FA2A3</color>
+    <color name="gray04">#757778</color>
+    <color name="gray05">#95A3AE</color>
+    <color name="gray06">#f5f5f5</color>
+    <color name="gray07">#838181</color>
+    <color name="gray08">#DEE2E2</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="dash_label_color">#838181</color>
+
+
+    <color name="shop_online_color">#70ad47</color>
+    <color name="shop_offline_color">#bfbfbf</color>
+
+    <color name="gray_button_color">#e4edf4</color>
+    <color name="bottom_bar_color">#d1e6eb</color>
+    <color name="bottom_text_color">#7c878b</color>
+
+    <color name="clr_item_replenish_gray">#f1f1f4</color>
+
+    <color name="clr_dashboard_red">#e8392f</color>
+    <color name="clr_dashboard_light_red">#F8BDC3</color>
+    <color name="clr_dashboard_yellow">#fff200</color>
+    <color name="clr_dashboard_yellow_big">#fbda35</color>
+    <color name="clr_dashboard_orange">#ff6806</color>
+    <color name="clr_dashboard_green">#b5e61d</color>
+    <color name="clr_shop_item_click">#6adc56</color>
+    <color name="clr_shop_item_online">#32AC3E</color>
+
+    <color name="clr_calendar_text">#b0eaf5</color>
+
+    <color name="text_content">#ffa19d94</color>
+    <color name="text_top_blue_button">#02a2bc</color>
+    <color name="text_blue_button">#02a2bc</color>
+
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <!-- QRCode scanner color end -->
+
+    <color name="clr_graph_00">#8bc8db</color>
+    <color name="clr_graph_01">#D81B60</color>
+    <color name="clr_graph_02">#00FF00</color>
+    <color name="clr_graph_03">#ff6806</color>
+    <color name="clr_graph_04">#fff200</color>
+    <color name="clr_graph_05">#1da1f2</color>
+    <color name="clr_graph_06">#fa8181</color>
+    <color name="clr_graph_07">#02a2bc</color>
+
+    <color name="clr_notice_no">#b5e61d</color>
+    <color name="clr_notice_yes">#5bd3f5</color>
+
+</resources>

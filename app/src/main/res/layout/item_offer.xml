@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/MyTheme"
+    style="@style/MatchWrap"
+    android:background="@drawable/item_pressed"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:layout_gravity="left|center"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_package" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/txt_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Packages"
+            android:textColor="@color/black"
+            android:textSize="14dp">
+        </TextView>
+        <TextView
+            android:id="@+id/txt_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textColor="@color/monsoon"
+            android:textSize="10dp">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_amount"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="180.00"
+        android:gravity="right">
+    </TextView>
+
+</LinearLayout>

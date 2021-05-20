@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/MyTheme"
+    style="@style/MatchWrap"
+    android:background="@drawable/item_pressed"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:layout_gravity="left|center"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="left|center"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/txt_inventory_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maria Solidum"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:layout_marginLeft="0dp">
+            </TextView>
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="It is a long established fact that a matter will be"
+                android:textColor="@color/monsoon"
+                android:textSize="10dp"
+                android:layout_marginLeft="0dp">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_unit"
+            android:layout_width="@dimen/inventory_item_width"
+            android:layout_height="@dimen/inventory_item_height"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/radius_red_box"
+            android:gravity="center"
+            android:text="\u004012"
+            android:textColor="@color/dash_label_color"
+            android:textSize="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_first"
+            android:layout_width="@dimen/inventory_item_width"
+            android:layout_height="@dimen/inventory_item_height"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="10dp"
+            android:textColor="@color/dash_label_color"
+            android:background="@drawable/radius_yellow_box"
+            android:text="50">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_second"
+            android:layout_marginLeft="5dp"
+            android:layout_width="@dimen/inventory_item_width"
+            android:layout_height="@dimen/inventory_item_height"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:textColor="@color/dash_label_color"
+            android:background="@drawable/radius_orange_box"
+            android:text="10">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_third"
+            android:layout_width="@dimen/inventory_item_width"
+            android:layout_height="@dimen/inventory_item_height"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/dash_label_color"
+            android:background="@drawable/radius_green_box"
+            android:text="45">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:src="@drawable/icon_warning">
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

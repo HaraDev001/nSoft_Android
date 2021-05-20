@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/fragment_home"
+    android:layout_height="match_parent"
+    app:umanoDragView="@id/lay_drag_shop"
+    app:umanoScrollableView="@id/lst_notice"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="@dimen/bottom_home_height"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lay_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lst_shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/gray02"
+                    android:dividerHeight="1dp"
+                    tools:listitem="@layout/item_shop">
+                </ListView>
+                <include
+                    android:id="@+id/empty_result"
+                    layout="@layout/layout_empty_result"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/btn_add_shop"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/radius_replenish_button"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:src="@drawable/icon_plus">
+                    </ImageView>
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="ADD NEW SHOP"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/button_text_size">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_loading">
+        </include>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_bottom_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

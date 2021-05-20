@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_capture"
+    android:orientation="vertical"
+    tools:context="com.nsoft.laundromat.controller.shop.scan.CaptureActivity">
+
+    <include
+        layout="@layout/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <com.nsoft.laundromat.controller.shop.scan.view.ViewfinderView
+            android:id="@+id/viewfinder_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:corner_color="@color/corner_color"
+            app:frame_color="@color/viewfinder_frame"
+            android:layout_marginTop="-70dp"
+            app:label_text=""
+            app:label_text_color="@color/white"
+            app:laser_color="@color/laser_color"
+            app:mask_color="@color/viewfinder_mask"
+            app:result_color="@color/result_view"
+            app:result_point_color="@color/result_point_color" />
+
+    </FrameLayout>
+</LinearLayout>

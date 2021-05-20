@@ -1,0 +1,19 @@
+<resources>
+
+<!--    <style description="AppTheme.NoActionBar">-->
+<!--        <item description="windowActionBar">false</item>-->
+<!--        <item description="windowNoTitle">true</item>-->
+<!--        <item description="android:statusBarColor">@color/status_bar_color</item>-->
+<!--    </style>-->
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/jet</item>
+        <item name="colorControlNormal">@color/jet</item>
+        <item name="colorControlActivated">@color/jet</item>
+        <item name="colorControlHighlight">@color/jet</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

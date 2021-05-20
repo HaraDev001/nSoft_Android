@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragment_home"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/graph_content_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/box_margin_left_right"
+            android:layout_marginRight="@dimen/box_margin_left_right"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/content_top_height"
+                android:background="@drawable/radius_category"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="@dimen/category_arrow_size"
+                    android:layout_height="@dimen/category_arrow_size"
+                    android:src="@drawable/left_arrow">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_calendar"
+                        android:layout_width="@dimen/calendar_image_size"
+                        android:layout_height="@dimen/calendar_image_size"
+                        android:src="@drawable/calendar_icon"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txt_calendar"
+                        android:layout_width="@dimen/calendar_text_width"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/clr_calendar_text">
+                    </TextView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="@dimen/category_arrow_size"
+                    android:layout_height="@dimen/category_arrow_size"
+                    android:src="@drawable/right_arrow">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_graph"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/box_margin_left_right"
+            android:layout_marginRight="@dimen/box_margin_left_right"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TOTAL"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sub_title_font_big">
+                    </TextView>
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/txt_shift_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:textColor="@color/monsoon"
+                        android:gravity="center_vertical"
+                        android:text="59,000.oo">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray06" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="8 am"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_08"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="9 am"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size"></TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="10 am"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="11 am"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="12 am"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1 pm"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="2 pm"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="3 pm"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="4 pm"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray06" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/sale_item_height"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="5 pm"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sub_title_font_size">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="5"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/txt_amount_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/monsoon"
+                                android:gravity="center_vertical"
+                                android:text="21,000.00">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

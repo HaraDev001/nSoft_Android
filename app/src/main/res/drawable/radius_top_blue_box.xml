@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners
+                android:radius="20dp">
+            </corners>
+            <solid android:color="@color/text_top_blue_button"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="true" >
+        <shape>
+            <corners
+                android:radius="20dp">
+            </corners>
+            <solid android:color="@color/colorPrimary"  />
+        </shape>
+    </item>
+</selector>

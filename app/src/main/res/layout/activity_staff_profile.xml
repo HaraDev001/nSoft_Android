@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_staff_profile"
+    tools:context="com.nsoft.laundromat.controller.staff.StaffProfileActivity"
+    app:umanoDragView="@id/lay_drag_shop"
+    app:umanoScrollableView="@id/lst_notice"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    app:umanoPanelHeight="@dimen/bottom_home_height"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/lay_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="0dp"
+                android:paddingBottom="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/round_big_image_size"
+                    android:layout_height="@dimen/round_big_image_size"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/light_gray"
+                    android:src="@drawable/staff_user"/>
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/menu_title_text_size"
+                    android:text="Martin Solidum"
+                    android:gravity="center"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/transaction_padding_left"
+                android:paddingRight="@dimen/transaction_padding_right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NAME"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12dp">
+                        </TextView>
+                        <TextView
+                            android:id="@+id/txt_staff_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="left"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="Martin Solidum"
+                            android:textSize="14dp">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ADDRESS"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sub_title_font_size">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:textColor="@color/monsoon"
+                            android:gravity="center_vertical"
+                            android:text="Sta, Ana, Manila">
+                    </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="MOBILE"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sub_title_font_size">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/txt_mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:text="09088198888"
+                            android:textColor="@color/monsoon">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EMAIL"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12dp">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="left"
+                            android:textColor="@color/black"
+                            android:gravity="center_vertical"
+                            android:text="marting@gmail.com"
+                            android:textSize="14dp">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="left">
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ROLE"
+                            android:textColor="@color/light_gray"
+                            android:textSize="12dp">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="left"
+                            android:gravity="center_vertical"
+                            android:text="STAFF"
+                            android:textColor="@color/black"
+                            android:textSize="14dp">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray06" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/transaction_item_height"
+                    android:paddingLeft="@dimen/transaction_padding_left"
+                    android:paddingRight="@dimen/transaction_padding_right"
+                    android:background="@color/profile_transaction_tab_color"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left">
+
+                        <LinearLayout
+                            android:id="@+id/lay_previous_staff"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/radius_circle_click_main"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/icon_arrow_left">
+                            </ImageView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txt_inventory_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:text="Jan 1 2020 - Jan 30 2020"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:gravity="center">
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center|right"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:id="@+id/lay_next_staff"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/radius_circle_click_main"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/icon_arrow_right">
+                            </ImageView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <CalendarView
+                        android:id="@+id/simpleCalendarView"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="match_parent" />
+
+                    <ListView
+                        android:id="@+id/lst_staff_transaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:divider="@color/gray06"
+                        android:dividerHeight="1dp">
+                    </ListView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="3dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingBottom="1dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:background="@color/white_gray">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/txt_list_title_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Date"
+                                android:textColor="@color/black"
+                                android:textSize="14dp">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/txt_list_sub_title_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Time In"
+                                android:textColor="@color/black"
+                                android:textSize="14dp">
+                            </TextView>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/gray06" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical"
+                                android:text="Time Out">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="@color/gray06" />
+
+                    <ListView
+                        android:id="@+id/lst_staff_inventory"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:divider="@color/light_gray"
+                        android:dividerHeight="1dp"
+                        tools:listitem="@layout/item_staff_profile"></ListView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_loading">
+        </include>
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_bottom_drag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </include>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

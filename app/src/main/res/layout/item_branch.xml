@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/lay_branch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:background="@drawable/radius_border_branch"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txt_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Squeaky Clean"
+            android:textSize="9dp"/>
+
+        <ImageView
+            android:id="@+id/img_shop_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/icon_home_white"/>
+
+        <TextView
+            android:id="@+id/txt_branch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="San Jose"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/white"
+            android:textSize="9dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_sales_report">
+
+    <fragment
+        android:id="@+id/nav_sales_report"
+        android:name="com.nsoft.laundromat.controller.report.ui.xreading.SalesReportFragment"
+        android:label="@string/menu_report_sale"
+        tools:layout="@layout/fragment_sales_report" />
+
+    <fragment
+        android:id="@+id/nav_item_sold"
+        android:name="com.nsoft.laundromat.controller.report.ui.zreading.ItemSoldFragment"
+        android:label="@string/menu_report_item_sold"
+        tools:layout="@layout/fragment_item_sold" />
+
+    <fragment
+        android:id="@+id/nav_consolidated"
+        android:name="com.nsoft.laundromat.controller.report.ui.hourly.ConsolidatedFragment"
+        android:label="@string/menu_report_consolidate"
+        tools:layout="@layout/fragment_consolidated" />
+
+    <fragment
+        android:id="@+id/nav_more"
+        android:name="com.nsoft.laundromat.controller.report.ui.category.MoreFragment"
+        android:label="@string/menu_report_more"
+        tools:layout="@layout/fragment_more" />
+
+    <fragment
+        android:id="@+id/nav_week"
+        android:name="com.nsoft.laundromat.controller.report.ui.week.WeekFragment"
+        android:label="@string/menu_report_dashboard"
+        tools:layout="@layout/fragment_week" />
+
+    <fragment
+        android:id="@+id/nav_month"
+        android:name="com.nsoft.laundromat.controller.report.ui.month.MonthFragment"
+        android:label="@string/menu_report_monthly"
+        tools:layout="@layout/fragment_offer" />
+
+    <fragment
+        android:id="@+id/nav_year"
+        android:name="com.nsoft.laundromat.controller.report.ui.year.YearFragment"
+        android:label="@string/menu_report_yearly"
+        tools:layout="@layout/fragment_year" />
+
+    <fragment
+        android:id="@+id/nav_consolidate"
+        android:name="com.nsoft.laundromat.controller.report.ui.consolidate.ConsolidateFragment"
+        android:label="@string/menu_report_consolidated"
+        tools:layout="@layout/fragment_consolidate" />
+
+    <fragment
+        android:id="@+id/nav_report_customer"
+        android:name="com.nsoft.laundromat.controller.menu.ui.logout.LogoutFragment"
+        android:label="@string/menu_report_customers"
+        tools:layout="@layout/fragment_logout" />
+
+    <fragment
+        android:id="@+id/nav_report_offer"
+        android:name="com.nsoft.laundromat.controller.menu.ui.logout.LogoutFragment"
+        android:label="@string/menu_report_offers"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

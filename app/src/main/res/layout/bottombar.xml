@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/bottom_bar_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/txt_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Squeaky Clean"
+                android:textColor="@color/bottom_text_color"
+                android:textSize="16dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="@dimen/bottom_image_icon_size"
+                android:layout_height="@dimen/bottom_image_icon_size"
+                android:src="@drawable/home_icon">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/txt_shop_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="San Jose"
+                android:textColor="@color/bottom_text_color"
+                android:textSize="16dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
